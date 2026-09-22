@@ -6,9 +6,21 @@
 Options -Indexes
 Options -MultiViews
 
-# 2. Redirect /index.html to the clean root URL so the address bar shows
-#    "haptags.com" instead of "haptags.com/index.html"
+# 2. Canonical host: force apex (non-www) + https, so www.haptags.com and
+#    the http:// version don't serve duplicate content Google has to
+#    split ranking signals across.
 RewriteEngine On
+
+# 2a. www.haptags.com -> haptags.com
+RewriteCond %{HTTP_HOST} ^www\.haptags\.com [NC]
+RewriteRule ^(.*)$ https://haptags.com/$1 [L,R=301]
+
+# 2b. http:// -> https://
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://haptags.com/$1 [L,R=301]
+
+# 2b. Redirect /index.html to the clean root URL so the address bar shows
+#     "haptags.com" instead of "haptags.com/index.html"
 RewriteCond %{THE_REQUEST} /index\.html[?\s] [NC]
 RewriteRule ^ /? [R=301,L]
 

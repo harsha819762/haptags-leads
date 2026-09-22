@@ -4,27 +4,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haptags LLP — Website Development, App Development, Digital Marketing, Interiors & Real Estate</title>
+  <title>Web, App & Interior Design Company in Bangalore | Haptags</title>
   <meta name="description"
-    content="Haptags LLP delivers premier Website Development, cutting-edge Mobile App Development, high-impact Digital Marketing, bespoke Luxury Interior Design, and expert Real Estate Agency advisory.">
-  <meta name="keywords"
-    content="Haptags, Haptags LLP, Website Development, App Development, Digital Marketing, Social Media Marketing, Interior Design, Real Estate Agency, Luxury Interiors, Real Estate Advisory">
+    content="Website development, mobile apps, digital marketing, luxury interiors and real estate advisory from Haptags LLP, a multi-service firm in Bangalore.">
+  <link rel="canonical" href="https://haptags.com/">
 
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://haptags.com/">
+  <meta property="og:site_name" content="Haptags LLP">
+  <meta property="og:locale" content="en_IN">
   <meta property="og:title"
-    content="Haptags LLP — Web Development, Mobile Apps, Digital Marketing, Interiors & Real Estate">
+    content="Web, App & Interior Design Company in Bangalore | Haptags LLP">
   <meta property="og:description"
-    content="Experience the next dimension with Haptags LLP: Website Development, Mobile Apps, Digital Marketing, Luxury Interiors & Real Estate Agency.">
-  <meta property="og:image" content="assets/images/real-estate.png">
+    content="Website development, mobile apps, digital marketing, luxury interiors and real estate advisory from Haptags LLP, based in Bangalore.">
+  <meta property="og:image" content="https://haptags.com/assets/images/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Haptags LLP — Bangalore">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web, App & Interior Design Company in Bangalore | Haptags LLP">
+  <meta name="twitter:description"
+    content="Website development, mobile apps, digital marketing, luxury interiors and real estate advisory from Haptags LLP, based in Bangalore.">
+  <meta name="twitter:image" content="https://haptags.com/assets/images/og-cover.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logos/haptags-logo.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- Fonts: discovered by the HTML parser in parallel with CSS, not nested
+       inside a render-blocking @import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/design-system.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/components.css">
+
+  <!-- Structured Data: ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://haptags.com/#org",
+    "name": "Haptags LLP",
+    "url": "https://haptags.com/",
+    "image": "https://haptags.com/assets/logos/haptags-logo.png",
+    "logo": "https://haptags.com/assets/logos/haptags-logo.png",
+    "telephone": "+91-9986861402",
+    "email": "info@haptags.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Maheshwarramma Temple Road, Mahadevapura",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "postalCode": "560048",
+      "addressCountry": "IN"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Bengaluru"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/haptags-llp/",
+      "https://www.instagram.com/haptagsdotcom/"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Haptags LLP Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Development", "areaServed": "Bengaluru" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile App Development", "areaServed": "Bengaluru" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Marketing", "areaServed": "Bengaluru" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Luxury Interior Design", "areaServed": "Bengaluru" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Real Estate Advisory", "areaServed": "Bengaluru" } }
+      ]
+    }
+  }
+  </script>
 </head>
 
 <body class="stardust-bg">
@@ -67,7 +130,7 @@
     <nav class="nav-container">
       <!-- Official Haptags Brand Logo -->
       <a href="#hero" class="brand-logo" data-cursor="✦ Haptags Home">
-        <img src="assets/logos/haptags-logo.png" alt="Haptags" class="brand-logo-img">
+        <img src="assets/logos/haptags-logo.png" alt="Haptags" class="brand-logo-img" width="456" height="384" loading="eager">
         <span class="logo-tag">LLP</span>
       </a>
 
@@ -86,35 +149,35 @@
               <a href="#web-development" class="dropdown-card" data-cursor="✦ Website Dev">
                 <div class="dropdown-card-icon" style="color: var(--brand-blue);">🌐</div>
                 <div class="dropdown-card-content">
-                  <h5>Website Development</h5>
+                  <p class="dropdown-card-title">Website Development</p>
                   <p>Next.js, modern fullstack web apps & cloud infrastructure.</p>
                 </div>
               </a>
               <a href="#app-development" class="dropdown-card" data-cursor="✦ App Dev">
                 <div class="dropdown-card-icon" style="color: var(--brand-purple);">📱</div>
                 <div class="dropdown-card-content">
-                  <h5>App Development</h5>
+                  <p class="dropdown-card-title">App Development</p>
                   <p>Native & cross-platform iOS & Android mobile applications.</p>
                 </div>
               </a>
               <a href="#digital-marketing" class="dropdown-card" data-cursor="✦ Marketing">
                 <div class="dropdown-card-icon" style="color: var(--brand-rose);">📈</div>
                 <div class="dropdown-card-content">
-                  <h5>Digital Marketing</h5>
+                  <p class="dropdown-card-title">Digital Marketing</p>
                   <p>Performance ads, 360° social growth & lead generation funnels.</p>
                 </div>
               </a>
               <a href="#interior-design" class="dropdown-card" data-cursor="✦ Interiors">
                 <div class="dropdown-card-icon" style="color: var(--brand-amber);">🛋️</div>
                 <div class="dropdown-card-content">
-                  <h5>Interior Design & Solutions</h5>
+                  <p class="dropdown-card-title">Interior Design & Solutions</p>
                   <p>Bespoke luxury residences, 3D design & modular styling.</p>
                 </div>
               </a>
               <a href="#real-estate" class="dropdown-card" data-cursor="✦ Real Estate" style="grid-column: span 2;">
                 <div class="dropdown-card-icon" style="color: var(--brand-emerald);">🏙️</div>
                 <div class="dropdown-card-content">
-                  <h5>Real Estate Agency & Advisory</h5>
+                  <p class="dropdown-card-title">Real Estate Agency & Advisory</p>
                   <p>Luxury residential properties, commercial spaces & land acquisition advisory.</p>
                 </div>
               </a>
@@ -172,7 +235,7 @@
       <div class="hero-badge-wrap">
         <div class="hero-eyebrow-pill" data-cursor="✦ Strategy & Spaces">
           <span class="pill-badge-dot"></span>
-          <span>Digital Engineering, Marketing & Luxury Living Environments</span>
+          <span>Digital Engineering, Marketing & Luxury Living Environments in Bangalore</span>
         </div>
       </div>
 
@@ -181,11 +244,13 @@
         Experience the<br class="hero-m-br">
         next dimension of<br class="hero-m-br">
         <span class="hero-gradient-text">digital intelligence<br class="hero-m-br">& physical spaces</span>
+        <span class="hero-locality">Based in Bangalore, India</span>
       </h1>
 
       <!-- Supporting Paragraph -->
       <p class="hero-subhead">
-        <strong>Haptags LLP</strong> is a premier multi-disciplinary firm delivering cutting-edge
+        <strong>Haptags LLP</strong> is a premier multi-disciplinary firm based in
+        <strong>Bangalore</strong>, delivering cutting-edge
         <strong>Website Development</strong>, high-performance <strong>Mobile App Development</strong>,
         ROI-focused <strong>Digital Marketing</strong>, bespoke luxury <strong>Interior Design</strong>,
         and trusted <strong>Real Estate Agency</strong> advisory.
@@ -265,62 +330,63 @@
       <!-- First Set of Logos -->
       <div class="marquee-content">
         <div class="client-logo-card" data-cursor="✦ Citadel Properties">
-          <img src="assets/logos/clients/citadel.jpeg" alt="Citadel Properties LLP" class="client-logo-img">
+          <img src="assets/logos/clients/citadel.webp" alt="Citadel Properties LLP" class="client-logo-img" width="400" height="400" loading="eager">
         </div>
         <div class="client-logo-card" data-cursor="✦ Haps-Mart">
-          <img src="assets/logos/clients/hapsmart.jpeg" alt="Haps-Mart Fresh & Organic" class="client-logo-img">
+          <img src="assets/logos/clients/hapsmart.webp" alt="Haps-Mart Fresh & Organic" class="client-logo-img" width="400" height="400" loading="eager">
         </div>
         <div class="client-logo-card" data-cursor="✦ CBIT">
-          <img src="assets/logos/clients/cbit.jpeg" alt="CBIT" class="client-logo-img">
+          <img src="assets/logos/clients/cbit.webp" alt="CBIT" class="client-logo-img" width="224" height="224" loading="eager">
         </div>
         <div class="client-logo-card" data-cursor="✦ CMR">
-          <img src="assets/logos/clients/cmr.jpeg" alt="CMR" class="client-logo-img">
+          <img src="assets/logos/clients/cmr.webp" alt="CMR" class="client-logo-img" width="400" height="400" loading="eager">
         </div>
         <div class="client-logo-card" data-cursor="✦ KNBR">
-          <img src="assets/logos/clients/knbr.jpeg" alt="KNBR" class="client-logo-img">
+          <img src="assets/logos/clients/knbr.webp" alt="KNBR" class="client-logo-img" width="400" height="334" loading="eager">
         </div>
         <div class="client-logo-card" data-cursor="✦ LVS">
-          <img src="assets/logos/clients/lvs.jpeg" alt="LVS" class="client-logo-img">
+          <img src="assets/logos/clients/lvs.webp" alt="LVS" class="client-logo-img" width="400" height="398" loading="eager">
         </div>
         <div class="client-logo-card" data-cursor="✦ CMC">
-          <img src="assets/logos/clients/cmc.jpeg" alt="CMC" class="client-logo-img">
+          <img src="assets/logos/clients/cmc.webp" alt="CMC" class="client-logo-img" width="400" height="400" loading="eager">
         </div>
         <div class="client-logo-card" data-cursor="✦ Nadile Films">
-          <img src="assets/logos/clients/nadile-films.jpeg" alt="Nadile Films" class="client-logo-img">
+          <img src="assets/logos/clients/nadile-films.webp" alt="Nadile Films" class="client-logo-img" width="400" height="267" loading="eager">
         </div>
         <div class="client-logo-card" data-cursor="✦ Vasista">
-          <img src="assets/logos/clients/vasista.jpeg" alt="Vasista" class="client-logo-img">
+          <img src="assets/logos/clients/vasista.webp" alt="Vasista" class="client-logo-img" width="400" height="379" loading="eager">
         </div>
       </div>
 
-      <!-- Second Duplicate Set for Infinite Smooth Loop -->
+      <!-- Second Duplicate Set for Infinite Smooth Loop (decorative — hidden
+           from assistive tech and from crawlers indexing duplicate alt text) -->
       <div class="marquee-content" aria-hidden="true">
         <div class="client-logo-card">
-          <img src="assets/logos/clients/citadel.jpeg" alt="Citadel Properties LLP" class="client-logo-img">
+          <img src="assets/logos/clients/citadel.webp" alt="" class="client-logo-img" width="400" height="400" loading="lazy">
         </div>
         <div class="client-logo-card">
-          <img src="assets/logos/clients/hapsmart.jpeg" alt="Haps-Mart Fresh & Organic" class="client-logo-img">
+          <img src="assets/logos/clients/hapsmart.webp" alt="" class="client-logo-img" width="400" height="400" loading="lazy">
         </div>
         <div class="client-logo-card">
-          <img src="assets/logos/clients/cbit.jpeg" alt="CBIT" class="client-logo-img">
+          <img src="assets/logos/clients/cbit.webp" alt="" class="client-logo-img" width="224" height="224" loading="lazy">
         </div>
         <div class="client-logo-card">
-          <img src="assets/logos/clients/cmr.jpeg" alt="CMR" class="client-logo-img">
+          <img src="assets/logos/clients/cmr.webp" alt="" class="client-logo-img" width="400" height="400" loading="lazy">
         </div>
         <div class="client-logo-card">
-          <img src="assets/logos/clients/knbr.jpeg" alt="KNBR" class="client-logo-img">
+          <img src="assets/logos/clients/knbr.webp" alt="" class="client-logo-img" width="400" height="334" loading="lazy">
         </div>
         <div class="client-logo-card">
-          <img src="assets/logos/clients/lvs.jpeg" alt="LVS" class="client-logo-img">
+          <img src="assets/logos/clients/lvs.webp" alt="" class="client-logo-img" width="400" height="398" loading="lazy">
         </div>
         <div class="client-logo-card">
-          <img src="assets/logos/clients/cmc.jpeg" alt="CMC" class="client-logo-img">
+          <img src="assets/logos/clients/cmc.webp" alt="" class="client-logo-img" width="400" height="400" loading="lazy">
         </div>
         <div class="client-logo-card">
-          <img src="assets/logos/clients/nadile-films.jpeg" alt="Nadile Films" class="client-logo-img">
+          <img src="assets/logos/clients/nadile-films.webp" alt="" class="client-logo-img" width="400" height="267" loading="lazy">
         </div>
         <div class="client-logo-card">
-          <img src="assets/logos/clients/vasista.jpeg" alt="Vasista" class="client-logo-img">
+          <img src="assets/logos/clients/vasista.webp" alt="" class="client-logo-img" width="400" height="379" loading="lazy">
         </div>
       </div>
     </div>
@@ -349,8 +415,9 @@
 
         <!-- Showcase Media Viewport -->
         <div class="showcase-media-frame">
-          <img id="showcase-image" class="showcase-image" src="assets/images/web-development.png"
-            alt="Haptags Digital Engineering, Marketing and Real Estate">
+          <img id="showcase-image" class="showcase-image" src="assets/images/web-development.webp"
+            alt="Haptags Digital Engineering, Marketing and Real Estate"
+            width="1280" height="853" loading="eager" decoding="async">
 
           <div class="showcase-media-overlay">
             <div class="pill-badge"
@@ -377,23 +444,23 @@
           </div>
         </div>
 
-        <!-- Showcase Real-Time Metrics Bar -->
+        <!-- Showcase Capability Bar -->
         <div id="showcase-stats-bar" class="showcase-stats-bar">
           <div class="stat-item">
-            <h4 class="text-gradient">&lt;100ms</h4>
-            <p>Global Page Load Speed</p>
+            <div class="stat-num text-gradient">Modern Stack</div>
+            <p>Next.js, React & Cloud-Native Architecture</p>
           </div>
           <div class="stat-item">
-            <h4 class="text-gradient">100%</h4>
-            <p>Responsive & SEO Optimized</p>
+            <div class="stat-num text-gradient">Responsive</div>
+            <p>Built Mobile-First for Every Device</p>
           </div>
           <div class="stat-item">
-            <h4 class="text-gradient">99.99%</h4>
-            <p>Uptime & Cloud SLA</p>
+            <div class="stat-num text-gradient">Secure Hosting</div>
+            <p>HTTPS-Enforced Cloud Infrastructure</p>
           </div>
           <div class="stat-item">
-            <h4 class="text-gradient">120+</h4>
-            <p>Web Applications Built</p>
+            <div class="stat-num text-gradient">Full-Stack</div>
+            <p>From Design to Deployment & Support</p>
           </div>
         </div>
       </div>
@@ -406,10 +473,10 @@
   <section id="services" class="bento-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Core Services</span>
+        <span class="section-tag">Core Services in Bangalore</span>
         <h2>Architected for digital speed & physical elegance</h2>
         <p>Combining state-of-the-art web and mobile engineering with high-ROI digital marketing, bespoke interior
-          aesthetics, and premier real estate consultancy.</p>
+          aesthetics, and premier real estate consultancy — proudly based in Bangalore.</p>
       </div>
 
       <div class="bento-grid">
@@ -417,10 +484,10 @@
         <div id="web-development" class="bento-card col-span-6 interactive-card">
           <div>
             <div class="bento-card-badge">🌐 Digital Engineering</div>
-            <h3 class="bento-card-title">Modern Website & Web Application Development</h3>
+            <h3 class="bento-card-title">Website Development Company in Bangalore</h3>
             <p class="bento-card-desc">
-              We design and build ultra-fast, modern web applications leveraging Next.js, React, TypeScript, and cloud
-              backends. From high-converting corporate portals to bespoke SaaS platforms.
+              Our Bangalore-based team designs and builds ultra-fast, modern web applications leveraging Next.js,
+              React, TypeScript, and cloud backends. From high-converting corporate portals to bespoke SaaS platforms.
             </p>
             <ul class="bento-feature-list">
               <li>
@@ -506,10 +573,10 @@
         <div id="app-development" class="bento-card col-span-6 interactive-card">
           <div>
             <div class="bento-card-badge">📱 Mobile Engineering</div>
-            <h3 class="bento-card-title">iOS & Android Mobile App Development</h3>
+            <h3 class="bento-card-title">Mobile App Development Company in Bangalore</h3>
             <p class="bento-card-desc">
-              Cross-platform and native mobile apps built with React Native and Flutter, featuring intuitive
-              micro-interactions, real-time push notifications, and offline-first capabilities.
+              Cross-platform and native iOS & Android apps built in Bangalore with React Native and Flutter, featuring
+              intuitive micro-interactions, real-time push notifications, and offline-first capabilities.
             </p>
             <ul class="bento-feature-list">
               <li>
@@ -555,7 +622,7 @@
             <div class="phone-body">
               <div class="phone-notification-pill">
                 <span style="font-size: 1rem;">🚀</span>
-                <span>Haptags Mobile Engine • 4.9★ App Store Rating</span>
+                <span>Haptags Mobile Engine • Built for Scale</span>
               </div>
               <div class="phone-app-card">
                 <div>
@@ -585,10 +652,10 @@
         <div id="digital-marketing" class="bento-card col-span-4 interactive-card">
           <div>
             <div class="bento-card-badge">📈 Growth & Marketing</div>
-            <h3 class="bento-card-title" style="font-size: 1.35rem;">Digital & Social Media Marketing</h3>
+            <h3 class="bento-card-title" style="font-size: 1.35rem;">Digital Marketing Agency in Bangalore</h3>
             <p class="bento-card-desc" style="font-size: 0.9rem;">
               Targeted customer acquisition, 360° branding, high-conversion real estate buyer lead funnels, and
-              cinematic video campaigns.
+              cinematic video campaigns for Bangalore brands and beyond.
             </p>
             <ul class="bento-feature-list" style="margin-bottom: 16px;">
               <li>
@@ -615,8 +682,8 @@
             style="background: var(--bg-secondary); border-radius: var(--radius-md); padding: 16px; border: 1px solid var(--border-card); margin-top: auto;">
             <div
               style="display:flex; justify-content:space-between; font-size:0.8rem; font-weight:700; margin-bottom:8px;">
-              <span>Campaign ROI</span>
-              <span style="color:var(--brand-emerald);">+340% YoY Growth</span>
+              <span>Campaign Performance</span>
+              <span style="color:var(--brand-emerald);">Consistent Year-over-Year Growth</span>
             </div>
             <div style="display:flex; gap:4px; height:18px; align-items:flex-end;">
               <div style="flex:1; background:var(--brand-blue); height:40%; border-radius:3px;"></div>
@@ -637,10 +704,10 @@
         <div id="interior-design" class="bento-card col-span-4 interactive-card">
           <div>
             <div class="bento-card-badge">🛋️ Interior Architecture</div>
-            <h3 class="bento-card-title" style="font-size: 1.35rem;">Luxury Interior Design & Solutions</h3>
+            <h3 class="bento-card-title" style="font-size: 1.35rem;">Interior Designers in Bangalore</h3>
             <p class="bento-card-desc" style="font-size: 0.9rem;">
-              Bespoke luxury residences, modular German/Italian kitchens, architectural lighting design, and
-              photorealistic 3D virtual walkthroughs.
+              Bespoke luxury residences across Bangalore, modular German/Italian kitchens, architectural lighting
+              design, and photorealistic 3D virtual walkthroughs.
             </p>
             <ul class="bento-feature-list" style="margin-bottom: 16px;">
               <li>
@@ -664,8 +731,9 @@
             </ul>
           </div>
           <div class="bento-card-preview" style="margin-top: auto;">
-            <img class="bento-card-img" src="assets/images/interior-design.png"
-              alt="Luxury Living Room Interior Design">
+            <img class="bento-card-img" src="assets/images/interior-design.webp"
+              alt="Luxury Living Room Interior Design"
+              width="1280" height="853" loading="lazy" decoding="async">
             <a href="assets/brochures/Luxury%20Interior%20Design%20Catalog.pdf"
               download="Luxury Interior Design Catalog.pdf" class="btn btn-secondary btn-compact"
               data-brochure-asset="interior" rel="noopener" style="width: 100%; margin-top: 12px;">
@@ -678,10 +746,10 @@
         <div id="real-estate" class="bento-card col-span-4 interactive-card">
           <div>
             <div class="bento-card-badge">🏙️ Real Estate Consultancy</div>
-            <h3 class="bento-card-title" style="font-size: 1.35rem;">Real Estate Agency & Advisory</h3>
+            <h3 class="bento-card-title" style="font-size: 1.35rem;">Real Estate Agency in Bangalore</h3>
             <p class="bento-card-desc" style="font-size: 0.9rem;">
-              End-to-end real estate agency services for luxury residential villas, commercial office spaces, high-yield
-              land parcels, and investment advisory.
+              End-to-end real estate agency services in Bangalore for luxury residential villas, commercial office
+              spaces, high-yield land parcels, and investment advisory.
             </p>
             <ul class="bento-feature-list" style="margin-bottom: 16px;">
               <li>
@@ -705,8 +773,9 @@
             </ul>
           </div>
           <div class="bento-card-preview" style="margin-top: auto;">
-            <img class="bento-card-img" src="assets/images/real-estate.png"
-              alt="Haptags Luxury Architecture & Real Estate">
+            <img class="bento-card-img" src="assets/images/real-estate.webp"
+              alt="Haptags Luxury Architecture & Real Estate"
+              width="1199" height="1312" loading="lazy" decoding="async">
             <a href="assets/brochures/Real%20Estate%20Agency%20%26%20Advisory%20Portfolio.pdf"
               download="Real Estate Agency & Advisory Portfolio.pdf" class="btn btn-secondary btn-compact"
               data-brochure-asset="realestate" rel="noopener"
@@ -726,7 +795,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">The Haptags Advantage</span>
-        <h2>Why clients choose Haptags LLP</h2>
+        <h2>Why clients in Bangalore choose Haptags LLP</h2>
         <p>Unifying world-class digital engineering and marketing with luxury physical spaces under a single high-trust
           brand.</p>
       </div>
@@ -734,7 +803,7 @@
       <div class="bento-grid">
         <div class="bento-card col-span-4 interactive-card">
           <div class="bento-card-badge">⚡ Modern Tech & Marketing</div>
-          <h4 style="font-size: 1.25rem; margin-bottom: 8px;">Blazing Web, Apps & Growth</h4>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Blazing Web, Apps & Growth</h3>
           <p style="font-size: 0.92rem; color: var(--text-secondary);">
             We build web and mobile applications using Next.js and React Native, amplified with 360° performance digital
             marketing for rapid customer acquisition.
@@ -743,7 +812,7 @@
 
         <div class="bento-card col-span-4 interactive-card">
           <div class="bento-card-badge">🛋️ Bespoke Luxury Craft</div>
-          <h4 style="font-size: 1.25rem; margin-bottom: 8px;">Bespoke Interior Excellence</h4>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Bespoke Interior Excellence</h3>
           <p style="font-size: 0.92rem; color: var(--text-secondary);">
             Our interior architects deliver luxury residential and corporate spaces from 3D concept to installation with
             a 10-year craftsmanship guarantee.
@@ -752,7 +821,7 @@
 
         <div class="bento-card col-span-4 interactive-card">
           <div class="bento-card-badge">🏙️ Verified Real Estate</div>
-          <h4 style="font-size: 1.25rem; margin-bottom: 8px;">High-Yield Property Advisory</h4>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">High-Yield Property Advisory</h3>
           <p style="font-size: 0.92rem; color: var(--text-secondary);">
             Our agency curates vetted prime land, luxury villas, and commercial assets with full legal due diligence and
             maximum growth potential.
@@ -765,7 +834,7 @@
   <!-- =========================================================================
        7. CLIENT TRUST & TESTIMONIALS
        ========================================================================= -->
-  <section class="testimonials-section">
+  <section id="testimonials" class="testimonials-section">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Client Reviews</span>
@@ -863,18 +932,36 @@
         <!-- Brand Summary -->
         <div class="footer-brand-info">
           <a href="#hero" class="brand-logo" style="text-decoration: none;">
-            <img src="assets/logos/haptags-logo.png" alt="Haptags" class="brand-logo-img">
+            <img src="assets/logos/haptags-logo.png" alt="Haptags" class="brand-logo-img" width="456" height="384" loading="eager">
             <span class="logo-tag">LLP</span>
           </a>
           <p>
             A multi-disciplinary firm delivering excellence in Website Development, Mobile App Engineering, Digital
             Marketing, Luxury Interior Design, and Real Estate Agency.
           </p>
-          <form id="newsletter-form" style="display:flex; gap:8px; margin-top:8px;">
+          <form id="newsletter-form" method="post" action="send-mail.php" style="display:flex; gap:8px; margin-top:8px;">
             <input type="email" placeholder="Enter work email..." required class="form-input"
               style="padding:10px 14px; font-size:0.85rem;">
             <button type="submit" class="btn btn-primary btn-compact">Subscribe</button>
           </form>
+          <div class="footer-social-row" aria-label="Haptags LLP on social media">
+            <a href="https://www.linkedin.com/company/haptags-llp/" class="footer-social-link" target="_blank"
+              rel="me noopener noreferrer" aria-label="Haptags LLP on LinkedIn" data-cursor="✦ LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/haptagsdotcom/" class="footer-social-link" target="_blank"
+              rel="me noopener noreferrer" aria-label="Haptags LLP on Instagram" data-cursor="✦ Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <!-- Column 1: Digital & Marketing -->
@@ -906,10 +993,10 @@
           <h6>Governance</h6>
           <ul class="footer-links">
             <li><a href="#why-haptags">About Haptags LLP</a></li>
-            <li><a href="#" data-open-brochure>Corporate Deck</a></li>
-            <li><a href="#" data-open-consultation>Client Testimonials</a></li>
+            <li><button type="button" class="footer-link-btn" data-open-brochure>Corporate Deck</button></li>
+            <li><a href="#testimonials">Client Testimonials</a></li>
             <li><a href="#showcase">Project Portfolio</a></li>
-            <li><a href="#" data-open-consultation>Careers & Partnerships</a></li>
+            <li><a href="mailto:info@haptags.com?subject=Careers%20%26%20Partnerships%20Inquiry">Careers & Partnerships</a></li>
           </ul>
         </div>
 
@@ -934,8 +1021,8 @@
                 style="color:var(--text-secondary); text-decoration:none; font-weight:600;">+91 9986861402</a>
             </li>
             <li style="margin-top:4px;">
-              <a href="#" data-open-consultation style="color:var(--brand-blue); font-weight:700;">+ Book Direct
-                Consultation</a>
+              <button type="button" class="footer-link-btn" data-open-consultation
+                style="color:var(--brand-blue); font-weight:700;">+ Book Direct Consultation</button>
             </li>
           </ul>
         </div>
@@ -946,9 +1033,9 @@
           © 2026 Haptags LLP. All rights reserved. Registered Limited Liability Partnership.
         </div>
         <div style="display:flex; gap:20px;">
-          <a href="#" style="color:var(--text-muted); text-decoration:none;">Privacy Policy</a>
-          <a href="#" style="color:var(--text-muted); text-decoration:none;">Terms of Service</a>
-          <a href="#" style="color:var(--text-muted); text-decoration:none;">LLP Compliance</a>
+          <a href="privacy-policy.html" style="color:var(--text-muted); text-decoration:none;">Privacy Policy</a>
+          <a href="terms-of-service.html" style="color:var(--text-muted); text-decoration:none;">Terms of Service</a>
+          <a href="llp-compliance.html" style="color:var(--text-muted); text-decoration:none;">LLP Compliance</a>
         </div>
       </div>
     </div>
@@ -988,7 +1075,7 @@
         </div>
       </div>
 
-      <form id="consultation-form">
+      <form id="consultation-form" method="post" action="send-mail.php">
         <!-- Anti-spam Honeypot -->
         <input type="text" name="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off">
         <input type="hidden" name="form_type" value="consultation">
@@ -1059,7 +1146,7 @@
         Marketing, Luxury Interiors, and Real Estate Agency.
       </p>
 
-      <form id="brochure-form">
+      <form id="brochure-form" method="post" action="send-mail.php">
         <!-- Anti-spam Honeypot -->
         <input type="text" name="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off">
         <input type="hidden" name="form_type" value="brochure">
@@ -1110,7 +1197,7 @@
     <div>
       <div class="mobile-drawer-header">
         <a href="#hero" class="brand-logo" style="text-decoration:none;">
-          <img src="assets/logos/haptags-logo.png" alt="Haptags" class="brand-logo-img">
+          <img src="assets/logos/haptags-logo.png" alt="Haptags" class="brand-logo-img" width="456" height="384" loading="eager">
           <span class="logo-tag">LLP</span>
         </a>
         <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close Mobile Menu">&times;</button>
@@ -1191,8 +1278,8 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/particles.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/particles.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 
 </html>

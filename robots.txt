@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/brochures/
+
+Sitemap: https://haptags.com/sitemap.xml

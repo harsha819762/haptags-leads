@@ -143,56 +143,56 @@ const SHOWCASE_ITEMS = {
   webdev: {
     title: "High-Performance Website Development",
     desc: "Crafting blazing-fast modern web applications, Next.js architecture, interactive digital experiences, and enterprise-grade web platforms.",
-    image: "assets/images/web-development.png",
+    image: "assets/images/web-development.webp",
     stats: [
-      { num: "<100ms", label: "Global Page Load Speed" },
-      { num: "100%", label: "Responsive & SEO Optimized" },
-      { num: "99.99%", label: "Uptime & Cloud SLA" },
-      { num: "120+", label: "Web Applications Built" }
+      { num: "Modern Stack", label: "Next.js, React & Cloud-Native Architecture" },
+      { num: "Responsive", label: "Built Mobile-First for Every Device" },
+      { num: "Secure Hosting", label: "HTTPS-Enforced Cloud Infrastructure" },
+      { num: "Full-Stack", label: "From Design to Deployment & Support" }
     ]
   },
   appdev: {
     title: "iOS & Android Mobile App Development",
     desc: "Engineering native and cross-platform mobile apps with fluid animations, intuitive UI/UX, robust offline sync, and scalable cloud backends.",
-    image: "assets/images/app-development.png",
+    image: "assets/images/app-development.webp",
     stats: [
-      { num: "4.9★", label: "Avg App Store Rating" },
-      { num: "iOS & Android", label: "Cross-Platform Tech" },
-      { num: "SOC-2", label: "Enterprise Security" },
-      { num: "50k+", label: "Daily Active Users" }
+      { num: "Cross-Platform", label: "iOS & Android from One Codebase" },
+      { num: "Native Feel", label: "Fluid Animations & Offline-Ready UX" },
+      { num: "Secure by Design", label: "Modern Auth & Data Protection" },
+      { num: "Store-Ready", label: "Built for App Store & Play Store Launch" }
     ]
   },
   marketing: {
     title: "Performance Digital & Social Media Marketing",
     desc: "Data-driven customer acquisition, 360° social media growth, high-conversion real estate & brand ad funnels, and viral creative production.",
-    image: "assets/images/digital-marketing.png",
+    image: "assets/images/digital-marketing.webp",
     stats: [
-      { num: "10x", label: "Avg. Pipeline ROI" },
-      { num: "4.5M+", label: "Social Impressions" },
-      { num: "45k+", label: "Verified Leads" },
+      { num: "Performance Ads", label: "Meta, Google & LinkedIn Campaigns" },
+      { num: "Full-Funnel", label: "Awareness to Conversion, One Strategy" },
+      { num: "Creative-Led", label: "Short-Form Video & Motion Design" },
       { num: "360°", label: "Full Growth Funnel" }
     ]
   },
   interior: {
     title: "Luxury Interior Design & Solutions",
     desc: "Bespoke high-end residential penthouses, executive suites, comprehensive spatial execution, photorealistic 3D renders, and modular styling.",
-    image: "assets/images/interior-design.png",
+    image: "assets/images/interior-design.webp",
     stats: [
-      { num: "350+", label: "Luxury Spaces Delivered" },
-      { num: "45 Days", label: "Avg Project Cycle" },
+      { num: "Bespoke Design", label: "3D Renders Before a Single Wall Moves" },
+      { num: "Structured Timelines", label: "Clear Milestones Every Project" },
       { num: "10-Yr", label: "Craftsmanship Warranty" },
-      { num: "99.4%", label: "Client Satisfaction" }
+      { num: "Client-First", label: "Dedicated Design Support Throughout" }
     ]
   },
   realestate: {
     title: "Real Estate Agency & Advisory",
     desc: "Guiding clients through high-yield land acquisitions, luxury residential villas, premium commercial spaces, and strategic property investments.",
-    image: "assets/images/real-estate.png",
+    image: "assets/images/real-estate.webp",
     stats: [
-      { num: "₹250Cr+", label: "Property Portfolio" },
-      { num: "1.2M+", label: "Sq. Ft. Advisory" },
-      { num: "100%", label: "Legal Title Verification" },
-      { num: "18.4%", label: "Avg. Investor ROI" }
+      { num: "Prime Listings", label: "Villas, Commercial & Land Parcels" },
+      { num: "Verified Titles", label: "Full Legal Due Diligence on Every Deal" },
+      { num: "Investor Focus", label: "Advisory for High-Yield Opportunities" },
+      { num: "End-to-End", label: "From Search to Closing" }
     ]
   }
 };
@@ -227,7 +227,7 @@ function initShowcaseSwitcher() {
         if (showcaseStatsBar) {
           showcaseStatsBar.innerHTML = data.stats.map(s => `
             <div class="stat-item">
-              <h4 class="text-gradient">${s.num}</h4>
+              <div class="stat-num text-gradient">${s.num}</div>
               <p>${s.label}</p>
             </div>
           `).join('');
